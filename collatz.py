@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # programa para el cálculo de la serie de collatz
-# Vamos ha hacer el programa en modo gráfico
+# Vamos ha hacer la versión del programa en modo gráfico
 
 # Importamos los módulos necesarios
 import gtk
