@@ -70,6 +70,7 @@ class Collatz:
 
 	# Definimos las acciones al hacer click en aceptar
 	def on_button1_clicked(self, widget):
+		'''función que define lo que pasa cuando hacemos click en aceptar'''
 
 		# Se crea un buffer en donde se guardaran los resultados
 		text_buffer = gtk.TextBuffer()
@@ -86,7 +87,10 @@ class Collatz:
 		text_buffer.set_text(str(resultado))
 		self.textview1.set_buffer(text_buffer)
 
+	# Definimos las acciones al pulsar intro
 	def on_entry1_activate(self, widget):
+		'''función que define lo que pasa cuando pulsamos intro en el cuadro de entrada'''
+
 		# Se crea un buffer en donde se guardaran los resultados
 		text_buffer = gtk.TextBuffer()
 		# Se obtiene el valor para convertir desde la entrada
