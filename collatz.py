@@ -2,7 +2,7 @@
 # programa para el cálculo de la serie de collatz
 # Vamos ha hacer la versión del programa en modo gráfico
 
-# Importamos los módulos necesarios
+# Importamos los módulos gráficos necesarios
 import gtk
 import gtk.glade
 
