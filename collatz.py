@@ -7,7 +7,7 @@ import gtk
 import gtk.glade
 
 # Fucion para calcular la conjetura de collatz
-# Es de la wikipedia pero me vale para practicar
+# de la wikipedia pero vale para practicar
 # el siguiente paso es ordenar la serie
 
 def collatz(n):
