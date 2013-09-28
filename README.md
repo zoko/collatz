@@ -1,4 +1,5 @@
 collatz
 =======
 
-A phyton+glade version for the collatz conjecture
+A python+glade version for the collatz conjecture
+Gtk + Gtk.glade required
