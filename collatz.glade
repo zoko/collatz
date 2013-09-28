@@ -1,18 +1,21 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
-  <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkTextBuffer" id="textbuffer1">
-    <property name="text" translatable="yes">Aplicaci&#xF3;n de c&#xE1;lculo de suceci&#xF3;n de Collatz. Introduce el
-n&#xFA;mero en la casilla de texto y  pulsa Intro o click en "Aceptar"</property>
+    <property name="text" translatable="yes">
+Aplicación de cálculo de suceción de Collatz. Introduce el número en la casilla de texto y  pulsa Intro o click en "Aceptar"
+</property>
   </object>
   <object class="GtkWindow" id="window1">
+    <property name="width_request">355</property>
     <property name="visible">True</property>
+    <property name="can_focus">False</property>
     <property name="title" translatable="yes">Collatz</property>
-    <signal name="destroy" handler="gtk_main_quit"/>
+    <signal name="destroy" handler="gtk_main_quit" swapped="no"/>
     <child>
       <object class="GtkHBox" id="hbox1">
         <property name="visible">True</property>
+        <property name="can_focus">False</property>
         <child>
           <object class="GtkVPaned" id="vpaned1">
             <property name="visible">True</property>
@@ -20,24 +23,29 @@ n&#xFA;mero en la casilla de texto y  pulsa Intro o click en "Aceptar"</property
             <child>
               <object class="GtkVBox" id="vbox1">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <child>
                   <object class="GtkMenuBar" id="menubar1">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <child>
                       <object class="GtkMenuItem" id="menuitem1">
                         <property name="visible">True</property>
+                        <property name="can_focus">False</property>
                         <property name="label" translatable="yes">_File</property>
                         <property name="use_underline">True</property>
                         <child type="submenu">
                           <object class="GtkMenu" id="menu1">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <child>
                               <object class="GtkImageMenuItem" id="imagemenuitem5">
                                 <property name="label">gtk-quit</property>
                                 <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="use_stock">True</property>
-                                <signal name="activate" handler="gtk_main_quit"/>
+                                <signal name="activate" handler="gtk_main_quit" swapped="no"/>
                               </object>
                             </child>
                           </object>
@@ -47,18 +55,21 @@ n&#xFA;mero en la casilla de texto y  pulsa Intro o click en "Aceptar"</property
                     <child>
                       <object class="GtkMenuItem" id="menuitem4">
                         <property name="visible">True</property>
+                        <property name="can_focus">False</property>
                         <property name="label" translatable="yes">_Help</property>
                         <property name="use_underline">True</property>
                         <child type="submenu">
                           <object class="GtkMenu" id="menu3">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <child>
                               <object class="GtkImageMenuItem" id="imagemenuitem10">
                                 <property name="label">gtk-about</property>
                                 <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="use_stock">True</property>
-                                <signal name="activate" handler="on_imagemenuitem10_activate"/>
+                                <signal name="activate" handler="on_imagemenuitem10_activate" swapped="no"/>
                               </object>
                             </child>
                           </object>
@@ -68,6 +79,7 @@ n&#xFA;mero en la casilla de texto y  pulsa Intro o click en "Aceptar"</property
                   </object>
                   <packing>
                     <property name="expand">False</property>
+                    <property name="fill">True</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
@@ -79,9 +91,11 @@ n&#xFA;mero en la casilla de texto y  pulsa Intro o click en "Aceptar"</property
                     <property name="receives_default">True</property>
                     <property name="use_stock">True</property>
                     <property name="yalign">0.47999998927116394</property>
-                    <signal name="clicked" handler="on_button1_clicked"/>
+                    <signal name="clicked" handler="on_button1_clicked" swapped="no"/>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -90,11 +104,12 @@ n&#xFA;mero en la casilla de texto y  pulsa Intro o click en "Aceptar"</property
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="has_focus">True</property>
-                    <property name="invisible_char">&#x25CF;</property>
-                    <signal name="activate" handler="on_entry1_activate"/>
+                    <property name="invisible_char">●</property>
+                    <signal name="activate" handler="on_entry1_activate" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
+                    <property name="fill">True</property>
                     <property name="position">2</property>
                   </packing>
                 </child>
@@ -109,6 +124,7 @@ n&#xFA;mero en la casilla de texto y  pulsa Intro o click en "Aceptar"</property
                 <property name="visible">True</property>
                 <property name="sensitive">False</property>
                 <property name="can_focus">True</property>
+                <property name="wrap_mode">word</property>
                 <property name="justification">fill</property>
                 <property name="buffer">textbuffer1</property>
               </object>
@@ -119,6 +135,8 @@ n&#xFA;mero en la casilla de texto y  pulsa Intro o click en "Aceptar"</property
             </child>
           </object>
           <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
             <property name="position">0</property>
           </packing>
         </child>
