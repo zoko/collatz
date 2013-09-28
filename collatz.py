@@ -22,7 +22,7 @@ def collatz(n):
         return result #en lugar de print usamos return porque hay que mostrarlo en un widget gtk2
 
 def imprimir():
-    # le vamos a pasar los datos de la función collatz y los vamos a presntar por pantalla.
+    # le vamos a pasar los datos de la función collatz y los vamos a presentar por pantalla.
     pass
 
 # Creamos una clase que almacena la informacion del programa (despues se usara)

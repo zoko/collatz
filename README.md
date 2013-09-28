@@ -1,4 +1,4 @@
 collatz
 =======
 
-A python+glade version for the collatz conjecture, Gtk + Gtk.glade required
+A Collatz conjeture calculator written in python using PyGTK
