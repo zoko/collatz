@@ -105,6 +105,10 @@ class Collatz:
 
 		text_buffer.set_text(str(resultado))
 		self.textview1.set_buffer(text_buffer)
+
+	# Definimos las acciones para el menú ayuda
+	def on_imagemenuitem10_activate(self, widget):
+		pass
    
 def main():
     gtk.main()
